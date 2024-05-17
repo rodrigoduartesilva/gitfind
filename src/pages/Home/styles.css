@@ -7,6 +7,7 @@
 
 .content__backgroundImg {
     height: 90vh;
+    background-attachment: fixed;
     position: absolute;
     left: 0;
 }
@@ -21,6 +22,7 @@
 input {
     border: 1px solid #999999;
     border-radius: 22px;
+    color: #FFFFFF;
     min-width: 250px;
     width: 80%;
     margin-right: 12px;
@@ -37,7 +39,12 @@ button {
     color: #FFFFFF;
     font-size: 1.125rem;
     padding: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
+
 
 .content__profile {
     display: flex;
@@ -76,4 +83,17 @@ button {
     color: #FFFFFF;
     margin: 0.75rem 0;
     text-align: center;
+}
+
+@media screen and (max-width: 1032px) {
+    .content__info__inside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    button {
+        margin-top: 10px;
+    }
 }
